@@ -5,36 +5,40 @@
     <title>Document</title>
 </head>
 <body>
-   <header>
-       
-       <h1> FORMULARZ ZGŁOSZENIOWY</h1>
-       <br/>
-       
-   </header>
+  <form action="https://formspree.io/blaze92able@gmail.com">
+   <label for="imie">Imie</label><br>
+   <input type="text" name="imie" id="imie" /><br>
+   <label for="nazwisko">Nazwisko</label><br>
+   <input type="text" name="nazwisko" id="nazwisko"/><br>
+   <label for="email">Email</label><br>   
+   <input type="email" name="email" id="email"/><br>
+   <label for="telefon">Telefon</label><br>  
+   <input type="text" name="telefon" id="telefon"/><br>
+   <label for="miasto">Miasto</label><br>
+        <select name="miasto" id="miasto">
+            <option value="Krakow">Kraków</option>
+            <option value="Warszawa">Warszawa</option>
+            <option value="Gdańsk">Gdańsk</option>
+        </select><br>
+   <label for="plec">Płeć</label><br>
+   <form name="plec" id="plec"><br>
+       <input type="radio" name="plec" value="meska">Meska<br>
+       <input type="radio" name="plec" value="zenska">Zenska<br>
+   </form><br>
+   <label for="zgoda">Zgoda</label><br>
+   <form name="Zgoda" id="zgoda"><br>
+       <input type="checkbox" name="Tak" value="Wyrazam">Wyrazam<br>
+       <input type="checkbox" name="Nie" value="Nie wyrazam">Nie wyrazam<br>
+   </form><br>
+   <label for="komentarz"></label>Komentarz: <br>
+   <textarea name="komentarz" form="test" id="komentarz"></textarea>
+   <br>
+   <input type="submit" value="wyślij">
+  </form> 
    
-   <section>
-       <form action="https://formspree.io/blaze92able@gmail.com" method="post">
-           <label for="imie">Imię:</label><br/>
-               <input type="text" name= "imie" id="imie"><br/>
-           <label for="nazwisko">Nazwisko:</label><br/>
-               <input type="text" name= "nazwisko" id="nazwisko"><br/>
-           <label for="email">Email:</label><br/>
-               <input type="email" name= "email" id= "email"><br/>
-           <label for="numer">Numer:</label><br/>
-               <input type="text" name= "numer" id="numer"><br/>
-           <label for="wiadomosc">Wiadomosc:</label><br/>
-               <input type="text" name="wiadomosc" id="wiadomosc"><br/>
-               <br/>
-           <input type="submit" value="wyslij">
-           
-           
-           
-           
-           
-           
-       </form>
-       
-   </section>
+   
+   
+   
     
 </body>
 </html>
