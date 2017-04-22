@@ -1,41 +1,85 @@
-*
+@media (min-width: 1170px)
 {
-    background-color: #213b50;
-    color: white;
+    #zdjecie
+    {
+        position: absolute;
+        background-image: url(../obrazy/man-1.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        
+    }
+    #podpis_1
+    {
+        position: relative;
+        top: 300px;
+        font-family:sans-serif;
+        font-size: x-large;
+        color: white;
+        margin-left: 50px;
+        
+    }
+    #obraz_2
+    {
+        display: none;
+    }
 }
 
-
-
-input[type="text"], input[type="email"], textarea
+@media (min-width: 992px) and (max-width: 1170px)
 {
-    background-color: #2b4a64;
-    border-style: none;
-    display: block; width: 200px; 
-    
+    #zdjecie
+    {
+        position: absolute;
+        background-image: url(../obrazy/man-2.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        height: 70%;
+        width: 100%;
+        
+    }
+    #podpis_1
+    {
+        position: relative;
+        top: 100px;
+        font-family:sans-serif;
+        font-size: 150%;
+        color: white;
+        margin-right: 50px;
+        float: right;
+        
+    }
 }
 
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus
+@media (max-width: 992px)
 {
-    background-color:#4e708c;
-    
+    #zdjecie
+    {
+        position: absolute;
+        background-image: url(../obrazy/man-1.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        height: 50%;
+        width: 100%;
+        
+    }
+    #podpis_1
+    {
+        position: relative;
+        top: 400px;
+        font-family:sans-serif;
+        font-size: 200%;
+        color: black;
+        margin-right: 50px;
+        text-align: center;
+        font-weight: 400;
+        
+    }
 }
 
-input[type="submit"]
-{
-    background-color: lime;
-    border-style: none;
-    width: 80px;
-    height: 40px;
-    font-family: cursive;
-}
-select#miasto option {
-    background-color: #4e708c;
-    color: white;
-}
-select#miasto
-{
-    background-color: #2b4a64;
-    color: white;
-    display: block; width: 200px;
-    border-style: none;
-}
